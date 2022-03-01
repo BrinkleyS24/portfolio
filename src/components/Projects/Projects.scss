@@ -1,0 +1,23 @@
+.card {
+    background-color: black;
+    border: solid gray;
+    display:inline-block;
+    
+    
+    .card-body {
+        color: #09e288;
+    }
+}
+
+.btn {
+    background-color: gray;
+    color: #09e288;
+}
+
+.projects {
+    margin-bottom: 3rem;
+}
+
+.project-list{
+    column-count: 2;
+}

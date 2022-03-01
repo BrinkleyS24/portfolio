@@ -1,0 +1,29 @@
+h3 {
+    color: #09e288;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+.header {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: black;
+}
+
+.icons {
+    margin-right: 1rem;
+    color: white;
+    &:hover {
+        color: #09e288;
+        transform: translateY(-10px);
+    }
+}
+
+.nav-link:hover {
+    color: #09e288;
+    transform: scale(1.05);
+}

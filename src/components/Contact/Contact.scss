@@ -1,0 +1,20 @@
+// .numbers {
+//     p {
+        
+//     }
+// }
+
+.contact {
+    color: white;
+}
+
+.email {
+    a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+            color: #09e288;
+        }
+    }
+}
+
