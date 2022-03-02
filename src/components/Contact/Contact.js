@@ -10,8 +10,8 @@ const Contact = () => {
 
             <div className="email">
                 <a href='mailto:brinkleystacey12@gmail.com'>
-                    <FontAwesomeIcon icon={faEnvelope} size='xl' style={{ color: 'white' }} />
-                    <span id='email-name'>Email</span>
+                    <FontAwesomeIcon icon={faEnvelope} size='xl' style={{ color: 'white' }} className='mail'/>
+                    <p id='email-name'>Email</p>
                 </a>
             </div>
             <br />

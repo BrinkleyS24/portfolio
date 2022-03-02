@@ -19,7 +19,15 @@ h3 {
     color: white;
     &:hover {
         color: #09e288;
-        transform: translateY(-10px);
+        .facebook:hover {
+            transform: scale(1.25);
+        }
+        .linkedin:hover {
+            transform: scale(1.25);
+        }
+        .github:hover {
+            transform: scale(1.25);
+        }
     }
 }
 
