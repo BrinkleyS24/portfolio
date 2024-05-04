@@ -1,79 +1,78 @@
 .a {
-    height: 100vh;
-    display: flex;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
   }
-  
-  .a-left {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 100%;
-  }
-  
-  .a-right {
-    flex: 1;
-  }
-  
-  .a-card.bg {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    background-color: #333;
-  }
-  
-  .a-card {
-    width: 60%;
-    height: 70vh;
-    border-radius: 30px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .a-img {
-    height: 100%;
+}
+
+.a-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+
+  @media screen and (max-width: 480px) {
     width: 100%;
-    position: relative;
-    
   }
-  
-  
-  .a-title {
-    font-weight: 400;
+}
+
+.a-right {
+  flex: 1;
+  padding: 20px;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    padding: 10px;
   }
-  
-  .a-sub {
-    margin: 20px 0px;
-    color: #09e288;
+}
+
+.a-card {
+  width: 60%;
+  height: 70vh;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: 480px) {
+    width: 80%; /* Adjusted width for smaller screens */
+    height: 30vh;
   }
-  
-  .a-desc{
-      font-weight: 300;
-      color: white;
+}
+
+.a-card.bg {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: #333;
+
+  @media screen and (max-width: 480px) {
+    display: none;
   }
-  
-  @media screen and (max-width:480px) {
-      .a{
-        flex-direction: column;
-        text-align: center;
-        margin-top: 50px;
-      }
-  
-      .a-left {
-        width: 100%;
-      }
-  
-      .a-card {
-        height: 30vh;
-      }
-  
-      .a-card.bg, .a-award {
-        display: none;
-      }
-  
-      .a-right{
-        padding: 20px;
-      }
-  }
+}
+
+.a-img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.a-title {
+  font-weight: 400;
+}
+
+.a-sub {
+  margin: 20px 0px;
+  color: #09e288;
+}
+
+.a-desc {
+  font-weight: 300;
+  color: white;
+}

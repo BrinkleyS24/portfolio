@@ -1,4 +1,5 @@
 import './Technologies.scss'
+import DjangoLogo from './django.png';
 
 const Technologies = () => {
     const skills = [
@@ -12,7 +13,7 @@ const Technologies = () => {
         { name: 'React.js', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
         { name: 'Node.js', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
         { name: 'Python', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
-        { name: 'Django', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg' },
+        { name: 'Django', img: DjangoLogo },
         { name: 'PostgreSQL', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
     ]
 
