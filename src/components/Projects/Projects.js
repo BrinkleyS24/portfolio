@@ -21,8 +21,8 @@ const Projects = () => {
                             <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
                                 <img className="d-block w-100" src={image} alt={name} />
                                 <div className="carousel-caption d-none d-md-block">
-                                    <h5>{name}</h5>
-                                    <p>{desc}</p>
+                                    <h5 style={{color:'black'}}>{name}</h5>
+                                    <p style={{color:'black'}}>{desc}</p>
                                     <a href={url} target="_blank" rel="noopener noreferrer" className="btn btn-primary mr-2">Live Site</a>
                                     <a href={urlTwo} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">GitHub</a>
                                 </div>
