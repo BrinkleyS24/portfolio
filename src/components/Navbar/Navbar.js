@@ -1,12 +1,12 @@
-import './Navbar.scss'
+import React from 'react';
+import './Navbar.scss';
 import { faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
 
-const Navbar = () => {
-
-    const [hovered, setHovered] = useState(false);
-    const toggleHover = () => setHovered(!hovered);
+const Navbar = ({ setActiveSection }) => { // Receive setActiveSection as prop
+    const handleLinkClick = (section) => {
+        setActiveSection(section); // Update activeSection state when link is clicked
+    };
 
     return (
         <div className="header">
@@ -17,10 +17,10 @@ const Navbar = () => {
                 </a>
 
                 <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#about" className="nav-link px-2 link-light">About</a></li>
-                    <li><a href="#projects" className="nav-link px-2 link-light">Projects</a></li>
-                    <li><a href="#tech" className="nav-link px-2 link-light">Technologies</a></li>
-                    <li><a href="#contact" className="nav-link px-2 link-light">Contact Me</a></li>
+                    <li><a href="#about" className="nav-link px-2 link-light" onClick={() => handleLinkClick('about')}>About</a></li>
+                    <li><a href="#projects" className="nav-link px-2 link-light" onClick={() => handleLinkClick('projects')}>Projects</a></li>
+                    <li><a href="#tech" className="nav-link px-2 link-light" onClick={() => handleLinkClick('technologies')}>Technologies</a></li>
+                    <li><a href="#contact" className="nav-link px-2 link-light" onClick={() => handleLinkClick('contact')}>Contact Me</a></li>
                 </ul>
 
                 <div className='col-md-3 text-end' >
@@ -40,4 +40,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;

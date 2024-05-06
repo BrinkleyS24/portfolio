@@ -1,5 +1,5 @@
 .a {
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
 
@@ -34,21 +34,21 @@
 }
 
 .a-card {
-  width: 60%;
-  height: 70vh;
+  width: 70%;
+  height: 50%;
   border-radius: 30px;
   position: relative;
   overflow: hidden;
+  background-color: #333; /* Added background color */
 
   @media screen and (max-width: 480px) {
     width: 80%; /* Adjusted width for smaller screens */
     height: 30vh;
   }
 }
-
 .a-card.bg {
   position: absolute;
-  top: 50px;
+  top: 280px;
   left: 50px;
   background-color: #333;
 
@@ -65,6 +65,7 @@
 
 .a-title {
   font-weight: 400;
+  color: #fff; /* Added text color */
 }
 
 .a-sub {
