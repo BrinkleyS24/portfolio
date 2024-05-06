@@ -1,4 +1,5 @@
-import "./Projects.scss"
+import React from 'react';
+import './Projects.scss';
 
 const Projects = () => {
     const projects = [
@@ -7,35 +8,39 @@ const Projects = () => {
         { name: "React To-Do", image: "https://i.imgur.com/HQBn0nr.png", url: "https://vigorous-hoover-20ab62.netlify.app/", desc: "A simple to do list created with React.js. My first attempt at creating a React project.", urlTwo: 'https://github.com/BrinkleyS24/react-todo' },
         { name: "Cat Collector", image: "https://i.imgur.com/Try9E9T.png", url: "https://my-catcollector-app.herokuapp.com/", desc: "A full stack Python/Django app that adds user cats to PostgreSQL database", urlTwo: 'https://github.com/BrinkleyS24/catcollector' },
     ];
-    return (
-        <div className="projects" id="projects">
-            <h2 className="projects-header" style={{ marginBottom: '3rem' }}>My Projects:</h2>
-            
-            <div className="container">
-                <div className="row">
-                    <ul className="project-list">
-                        {projects.map((project, index) => {
-                            const { name, image, url, urlTwo, desc } = project;
 
-                            return (
-                                <div>
-                                    <li className="card" style={{ width: '18rem', marginBottom: '2rem' }} key={index}>
-                                        <img className="card-img-top" src={image} alt="Card image cap" />
-                                        <div className="card-body">
-                                            <h5 className="card-title">{name}</h5>
-                                            <p className="card-text" style={{ color: 'white' }}>{desc}</p>
-                                            <a href={url} className="btn">Live Site</a>
-                                            <a href={urlTwo} className="btn" style={{ marginLeft: '1rem' }}>Github</a>
-                                        </div>
-                                    </li>
+    return (
+        <div id="projects" className="projects">
+            <h2 className="projects-header">My Projects:</h2>
+
+            <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+                <div className="carousel-inner">
+                    {projects.map((project, index) => {
+                        const { name, image, url, urlTwo, desc } = project;
+                        return (
+                            <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
+                                <img className="d-block w-100" src={image} alt={name} />
+                                <div className="carousel-caption d-none d-md-block">
+                                    <h5>{name}</h5>
+                                    <p>{desc}</p>
+                                    <a href={url} target="_blank" rel="noopener noreferrer" className="btn btn-primary mr-2">Live Site</a>
+                                    <a href={urlTwo} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">GitHub</a>
                                 </div>
-                            );
-                        })}
-                    </ul>
+                            </div>
+                        );
+                    })}
                 </div>
+                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
+                </button>
+                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Projects
+export default Projects;

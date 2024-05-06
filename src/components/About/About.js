@@ -19,12 +19,7 @@ const About = () => {
                     "Im just a kid from Brooklyn" - <em>Steve Rogers</em>
                 </p>
                 <p className="a-desc">
-                    As a great problem solver, an independent introvert, Software Engineering is great for me. 
-                    However, being from Brooklyn, New York taught me the importance of relationships and networking. 
-                    Put them both together and that made attending General Assembly the perfect destination. 
-                    I tried the self-taught route but there are some things you can't replace in a classroom (or a Zoom meeting in this case). 
-                    I was able to develop proficiency in HTML, CSS, and Javascript. Also, understand the MERN stack enough to build fully functional CRUD applications. 
-                    Every day I'm always learning what I don't or reiterating what I do.
+                    As a Software Engineer, I possess a strong proficiency in front and backend development, as well as a passion for crafting seamless user experiences. With expertise in AWS, CI/CD pipelines, databases like Postgres and MongoDB, and modern web development languages such as JavaScript ES6, TypeScript, and Java, I excel in problem-solving within Agile environments. Leveraging frameworks like React, React Native, and Node.js, I create intuitive and responsive web applications. Proficient in tools like Git, Docker, Jenkins, and Kubernetes, I am dedicated to driving innovation and excellence in large-scale enterprise service operations
                 </p>
             </div>
         </div>

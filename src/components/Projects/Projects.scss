@@ -1,42 +1,41 @@
 .card {
-    background-color: black;
-    border: solid 1px gray;
-    display: inline-block;
-    width: calc(50% - 20px);
-    margin: 10px;
-  
-    @media screen and (max-width: 768px) {
-      width: calc(100% - 20px);
-    }
-    
-    .card-body {
-      color: #09e288;
-    }
+  background-color: black;
+  border: solid 1px gray;
+  display: inline-block;
+  width: calc(50% - 20px);
+  margin: 10px;
+
+  @media screen and (max-width: 768px) {
+    width: calc(100% - 20px);
   }
   
-  .btn {
-    background-color: gray;
+  .card-body {
     color: #09e288;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  
-    &:hover {
-      background-color: #555;
-    }
   }
-  
-  .projects {
-    margin-bottom: 3rem;
+}
+
+.btn {
+  background-color: gray;
+  color: #09e288;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #555;
   }
-  
-  .project-list {
-    column-count: 2;
-    column-gap: 20px;
-  
-    @media screen and (max-width: 768px) {
-      column-count: 1;
-    }
+}
+
+.projects {
+  margin-bottom: 3rem;
+}
+
+.project-list {
+  column-count: 2;
+  column-gap: 20px;
+
+  @media screen and (max-width: 768px) {
+    column-count: 1;
   }
-  
+}
